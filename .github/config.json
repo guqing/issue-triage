@@ -1,0 +1,6 @@
+export type Command =
+	{ name: string } &
+	({ type: 'comment' & allowUsers: (username | '@author')[] } | { type: 'label' }) &
+	{ action?: 'close' } &
+	{ comment?: string; addLabel?: string; removeLabel?: string } &
+	{ requireLabel?: string; disallowLabel?: string }
