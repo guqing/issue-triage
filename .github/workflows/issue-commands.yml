@@ -20,5 +20,5 @@ jobs:
         uses: ./commands
         with:
           token: ${{secrets.RPEO_TOKEN}}
-          config-path: config.json
+          config-path: config
 
