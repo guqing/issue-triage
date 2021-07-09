@@ -359,7 +359,15 @@
 		"type": "comment",
 		"name": "assign",
 		"allowUsers": [
-            "guqing",
+            		"guqing",
+			"guqing-bot"
+		]
+	},
+	{
+		"type": "comment",
+		"name": "unassign",
+		"allowUsers": [
+            		"guqing",
 			"guqing-bot"
 		]
 	},
