@@ -48,9 +48,9 @@ jobs:
         uses: ./actions/feature-request
         with:
           token: ${{secrets.ISSUE_TRIAGE_BOT_PAT}}
-          candidateMilestoneID: 107
+          candidateMilestoneID: 1
           candidateMilestoneName: Backlog Candidates
-          backlogMilestoneID: 8
+          backlogMilestoneID: 1
           featureRequestLabel: feature-request
           upvotesRequired: 20
           numCommentsOverride: 20
@@ -58,6 +58,6 @@ jobs:
           warnComment: "This feature request has not yet received the 20 community upvotes it takes to make to our backlog. 10 days to go. To learn more about how we handle feature requests, please see our [documentation](https://aka.ms/vscode-issue-lifecycle).\n\nHappy Coding"
           acceptComment: ":slightly_smiling_face: This feature request received a sufficient number of community upvotes and we moved it to our backlog. To learn more about how we handle feature requests, please see our [documentation](https://aka.ms/vscode-issue-lifecycle).\n\nHappy Coding!"
           rejectComment: ":slightly_frowning_face: In the last 60 days, this feature request has received less than 20 community upvotes and we closed it. Still a big Thank You to you for taking the time to create this issue! To learn more about how we handle feature requests, please see our [documentation](https://aka.ms/vscode-issue-lifecycle).\n\nHappy Coding!"
-          warnDays: 10
-          closeDays: 60
+          warnDays: 1
+          closeDays: 2
           milestoneDelaySeconds: 60
